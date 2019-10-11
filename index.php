@@ -28,7 +28,7 @@
 			<div class="col-sm-4"></div>
 			<div class="col-sm-4">
 				<div class="panel panel-primary">
-					<div class="panel panel-heading">Sistema de ventas y almacen</div>
+					<div class="panel panel-heading">Sistema de ventas y almacen - Primera Beta</div>
 					<div class="panel panel-body">
 						<p>
 							<img src="img/a.jpg"  height="190">
