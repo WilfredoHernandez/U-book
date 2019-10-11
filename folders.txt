@@ -1,0 +1,8 @@
+bd: It contains querys and snypets od the database.
+clases: It contains each module with their respectives crud methods.
+css: It contains scripts with with the sytle of the page.
+img:It contains all the images used.
+js: It contains the js scripts tha used to run al the functions
+librerias: It contains all the libraries needed to create pdf's, jquery, bootstraps, select 2.
+procesos: It contains intermediate files between clases and vistas.
+vistas: It contains all the vistas to from each module.
