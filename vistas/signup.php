@@ -46,25 +46,25 @@ require_once "dependencies.php"
 
 				<form class="frmSignup" id="frmSignup">
 					<div class="wrap-input100 validate-input m-b-26">
-						<span class="label-input100">Full name</span>
+						<span class="label-input100">Full name:</span>
 						<input class="input100" type="text" name="name" placeholder="Enter you Name">
 						<span class="focus-input100"></span>
                     </div>
                    
                     <div class="wrap-input100 validate-input m-b-26">
-						<span class="label-input100">Email (username)</span>
+						<span class="label-input100">Email: (username)</span>
 						<input class="input100" type="text" name="username" placeholder="Enter Email">
 						<span class="focus-input100"></span>
                     </div>
                     
                     <div class="wrap-input100 validate-input m-b-26">
-						<span class="label-input100">Age (years)</span>
+						<span class="label-input100">Age: (years)</span>
 						<input class="input100" type="number" name="age" placeholder="Enter your age" id="age"  >
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-18">
-						<span class="label-input100">Password</span>
+						<span class="label-input100">Password:</span>
 						<input class="input100" type="password" name="pass" placeholder="Enter password">
 						<span class="focus-input100"></span>
 					</div>
