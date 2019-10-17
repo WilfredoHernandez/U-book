@@ -41,9 +41,7 @@ require_once "dependencies.php"
 						Login
 					</span>
 				</div>
-
 				<form class="frmSignup" id="frmSignup">
-                   
                     <div class="wrap-input100 validate-input m-b-26">
 						<span class="label-input100">Username:</span>
 						<input class="input100" type="text" name="username" placeholder="Enter Email">
@@ -70,6 +68,7 @@ require_once "dependencies.php"
 						<button class="login100-form-btn" id="signupS">
 							Login
 						</button>
+					</div>
 					</div>
 				</form>
 			</div>
