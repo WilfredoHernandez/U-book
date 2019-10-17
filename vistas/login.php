@@ -28,7 +28,7 @@ require_once "dependencies.php"
 	<link rel="stylesheet" type="text/css" href="assets/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="assets/css/util.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -41,7 +41,9 @@ require_once "dependencies.php"
 						Login
 					</span>
 				</div>
-				<form class="frmSignup" id="frmSignup">
+
+				<form class="frmLogin" id="frmLogin">
+                   
                     <div class="wrap-input100 validate-input m-b-26">
 						<span class="label-input100">Username:</span>
 						<input class="input100" type="text" name="username" placeholder="Enter Email">
@@ -65,10 +67,9 @@ require_once "dependencies.php"
 -->
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" id="signupS">
+						<button class="login100-form-btn" id="btnLogin">
 							Login
 						</button>
-					</div>
 					</div>
 				</form>
 			</div>

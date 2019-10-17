@@ -30,7 +30,7 @@ require_once "dependencies.php"
 	<link rel="stylesheet" type="text/css" href="assets/vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="assets/css/util.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/register.css">
 <!--===============================================================================================-->
 </head>
 <body>
@@ -58,8 +58,8 @@ require_once "dependencies.php"
                     </div>
                     
                     <div class="wrap-input100 validate-input m-b-26">
-						<span class="label-input100">Age: (years)</span>
-						<input class="input100" type="number" name="age" placeholder="Enter your age" id="age"  >
+						<span class="label-input100">Age:</span>
+						<input class="input100" type="date" name="age" id="age">
 						<span class="focus-input100"></span>
 					</div>
 
