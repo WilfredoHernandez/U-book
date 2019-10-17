@@ -402,6 +402,7 @@
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
+    padding-left:60px ;
     
   }
   
