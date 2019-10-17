@@ -13,7 +13,7 @@ require_once "dependencies.php"
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="assets/images/icons/login.ico"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assetsp/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/js/bootstrap.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
@@ -22,8 +22,6 @@ require_once "dependencies.php"
 	<link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="assets/vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="assets/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="assets/vendor/select2/select2.min.css">
 <!--===============================================================================================-->	

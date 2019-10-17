@@ -31,7 +31,7 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container">
 
-        <a class="btn btn-primary btn-md js-scroll-trigger" href="vistas/login.php">Login</a>
+    <img src="img/logo.png" alt="rent" width="180px" height="90px">
 
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,8 +51,22 @@
             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
            
           </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Download</a>
+           
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact"></a>
+           
+          </li>
         </ul>
       </div>
+      <ul class="navbar-nav ml-auto my-2 my-lg-2">
+        <li class="nav-item">
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="vistas/login.php">Login</a>
+           
+          </li>
+          </ul>
     </div>
   </nav>
 
@@ -93,7 +107,7 @@
       <div class="row">
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-6">
-            <img src="img/icons/rent.png" alt="rent" width="130" height="130">
+            <img src="img/icons/rent.png" alt="rent" width="130px" height="130px">
             <br><br>
             <h3 class="h4 mb-2">Rent Books</h3>
             <p class="text-muted mb-0">In U-book you can rent the book that you need, just look in our explorer with many categories.</p>
@@ -101,7 +115,7 @@
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-6">
-            <img src="img/icons/sales.png" alt="rent" width="130" height="130">
+            <img src="img/icons/sales.png" alt="rent" width="130px" height="130px">
             <br><br>
             <h3 class="h4 mb-2">Sale your Books</h3>
             <p class="text-muted mb-0">Do you have a book that you do not use? Maybe we can buy it.</p>
@@ -109,7 +123,7 @@
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-6">
-            <img src="img/icons/interchange.png" alt="rent" width="130" height="130">
+            <img src="img/icons/interchange.png" alt="rent" width="130px" height="130px">
             <br><br>
             <h3 class="h4 mb-2">Interchange your Books</h3>
             <p class="text-muted mb-0">You can interchange your book for other that you need.</p>
@@ -117,7 +131,7 @@
         </div>
         <div class="col-lg-3 col-md-6 text-center">
           <div class="mt-6">
-            <img src="img/icons/tracking.png" alt="rent" width="130" height="130">
+            <img src="img/icons/tracking.png" alt="rent" width="170px" height="130px">
             <br><br>
             <h3 class="h4 mb-2">Track your delivery (in Development)</h3>
             <p class="text-muted mb-0">You will always know where is your book.</p>
