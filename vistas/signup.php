@@ -69,7 +69,7 @@ require_once "dependencies.php"
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" id="signupS">
-							Login
+							Sign Up
 						</button>
 					</div>
 				</form>
