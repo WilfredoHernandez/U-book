@@ -402,7 +402,7 @@
     display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
-    padding-left:60px ;
+    padding-left:70px ;
     
   }
   
@@ -447,7 +447,7 @@
   
   @media (max-width: 480px) {
     .login100-form {
-      padding: 43px 15px 57px 15px;
+      padding: 43px 15px 57px 0px;
     }
   
     .label-input100 {
