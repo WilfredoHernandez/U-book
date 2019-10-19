@@ -139,6 +139,7 @@
       outline: none !important;
       border: none;
       background: transparent;
+      cursor: pointer;
   }
   
   button:hover {
@@ -238,7 +239,7 @@
   /*==================================================================
   [ Form ]*/
   
-  .frmLogin {
+  .frmLogins {
     width: 100%;
     display: -webkit-box;
     display: -webkit-flex;
@@ -403,6 +404,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-left: 70px;
+    cursor: pointer;
 
     
   }
@@ -441,7 +443,7 @@
   [ Responsive ]*/
   
   @media (max-width: 576px) {
-    .frmLogin {
+    .frmLogins {
       padding: 43px 15px 57px 20px;
     }
   }
