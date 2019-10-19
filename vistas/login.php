@@ -82,7 +82,6 @@ require_once "dependencies.php"
 			} 
 
 
-return true;
 		
 	});
 	});
