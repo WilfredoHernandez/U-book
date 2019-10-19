@@ -1,6 +1,8 @@
 <?php
 
-require_once "dependencies.php"
+require_once "dependencies.php";
+$probe= 4+5;
+require_once "../clases/Usuarios.php";
 ?>
 
 
@@ -32,48 +34,42 @@ require_once "dependencies.php"
 					</span>
 				</div>
 
-				<form class="frmSignup" id="frmSignup">
+				<form class="frmSignups" id="frmSignup" >
 					<div class="wrap-input100 validate-input m-b-26">
-						<span class="label-input100">Full name:</span>
-						<input class="input100" type="text" name="name" placeholder="Enter you Name">
+						<span class="label-input100">Name:</span>
+						<input class="input100" type="text" name="nombre" id="nombre" placeholder="Enter you Name">
+						<span class="focus-input100"></span>
+                    </div>
+					<div class="wrap-input100 validate-input m-b-26">
+						<span class="label-input100">Last Name:</span>
+						<input class="input100" type="text" name="apellido" id="apellido" placeholder="Enter you Name">
 						<span class="focus-input100"></span>
                     </div>
                    
                     <div class="wrap-input100 validate-input m-b-26">
 						<span class="label-input100">Email: (username)</span>
-						<input class="input100" type="text" name="username" placeholder="Enter Email">
+						<input class="input100"  type="email" name="usuario" id="usuario" placeholder="Enter Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" >
 						<span class="focus-input100"></span>
                     </div>
                     
-                    <div class="wrap-input100 validate-input m-b-26">
-						<span class="label-input100">Age:</span>
-						<input class="input100" type="date" name="age" id="age">
-						<span class="focus-input100"></span>
-					</div>
 
 					<div class="wrap-input100 validate-input m-b-18">
 						<span class="label-input100">Password:</span>
-						<input class="input100" type="password" name="pass" placeholder="Enter password">
+						<input class="input100" type="password" name="password" id="password" placeholder="Enter password">
 						<span class="focus-input100"></span>
 					</div>
-
 						
-			<!--		<div class="flex-sb-m w-full p-b-30">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Remember me
-							</label>
-						</div>
--->
+
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" id="signupS">
+						<span class="login100-form-btn" id="signupS">
 							Sign Up
-						</button>
+						</span>
 					</div>
 				</form>
+
 			</div>
+			
 		</div>
 	</div>
 	
@@ -82,19 +78,34 @@ require_once "dependencies.php"
 </body>
 </html>
 
-
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('#signupS').click(function(){
-		vacios=validarFormVacio('frmSignup');
-			if(vacios > 0){
-				alertify.error("All fields are required");
-				return false;
-			} 
+    $(document).ready(function(){
+        $('#signupS').click(function(){
 
+			vacios=validarFormVacio('frmSignup');
 
-return true;
-		
+		if(vacios>0){
+	alertify.error("All fields are required");
+	return false;
+}
+
+		datos=$('#frmSignup').serialize();
+		$.ajax({
+			type:"POST",
+			data:datos,
+			url:"assets/process/registrarUsuario.php",
+			success:function(r){
+                if(r==1){
+					alertify.success('Registration Succesful');
+					setTimeout(function(){
+								window.location="login.php";
+									},340); 
+					
+                } else{
+                    alertify.error('User Already Exist');
+                }
+			}
+		});
 	});
-	});
+    });
 </script>

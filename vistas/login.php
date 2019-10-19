@@ -32,17 +32,17 @@ require_once "dependencies.php"
 					</span>
 				</div>
 
-				<form class="frmLogin" id="frmLogin">
+				<form class="frmLogins" id="frmLogin">
                    
                     <div class="wrap-input100 validate-input m-b-26">
 						<span class="label-input100">Username:</span>
-						<input class="input100" type="text" name="username" placeholder="Enter Email">
+						<input class="input100" type="text" name="usuario" id="usuario" placeholder="Enter Email">
 						<span class="focus-input100"></span>
                     </div>
                     
 					<div class="wrap-input100 validate-input m-b-18">
 						<span class="label-input100">Password:</span>
-						<input class="input100" type="password" name="pass" placeholder="Enter password">
+						<input class="input100" type="password" name="password" id="password" placeholder="Enter password">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -57,9 +57,9 @@ require_once "dependencies.php"
 -->
 
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn" id="btnLogin">
+						<span class="login100-form-btn" id="btnLogin">
 							Login
-						</button>
+						</span>
 					</div>
 				</form>
 			</div>
@@ -73,16 +73,33 @@ require_once "dependencies.php"
 
 
 <script type="text/javascript">
-	$(document).ready(function(){
-		$('#btnLogin').click(function(){
-		vacios=validarFormVacio('frmLogin');
-			if(vacios > 0){
-				alertify.error("All fields are required");
-				return false;
-			} 
+    $(document).ready(function(){
+        $('#btnLogin').click(function(){
 
+			vacios=validarFormVacio('frmLogin');
 
-		
+		if(vacios>0){
+	alertify.error("All fields are required");
+	return false;
+}
+		datos=$('#frmLogin').serialize();
+		$.ajax({
+			type:"POST",
+			data:datos,
+			url:"assets/process/loginProcess.php",
+			success:function(r){
+                if(r==1){
+					alertify.success('Login Succesful');
+					setTimeout(function(){
+								window.location="explorer.php";
+									},340); 
+					
+                } else{
+                    alertify.error('Username or password is incorret');
+                }
+			}
+		});
+	
 	});
-	});
+    });
 </script>
