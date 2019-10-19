@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +53,7 @@
            
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Download</a>
+            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
            
           </li>
           <li class="nav-item">
@@ -140,8 +141,9 @@
       </div>
     </div>
   </section>
+  
 
-<!-- About Section -->
+<!-- Contact Section -->
 <section class="page-section bg-primary" id="contact">
     <div class="container">
     <div class="row justify-content-center">
@@ -165,8 +167,44 @@
     </div>
   </section>
 
+    <!-- Download Section -->
+    <section class="page-section" id="download">
+    <div class="container">
+      <h2 class="text-center mt-0">Download the Android App</h2>
+      <hr class="divider my-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-6">
+          <img src="img/mobile.jpg" alt="rent" width="180px" height="300px">
+          </div>
+        </div>
+     
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-6">
+          <br><br>   
+            <img src="img/mobile2.jpg" alt="rent" width="180px" height="300px">
+            
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-6">
+          
+            <br><br>
+            <br><br>   
+            <h3 class="h4 mb-2">Easier to Use</h3>
 
- 
+            <p class="text-muted mb-0">Now you can dowload our app from Google PlayStore and nearly on Iphone.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="mt-6">
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
   <!-- Footer -->
   <footer class="bg-light py-5">
