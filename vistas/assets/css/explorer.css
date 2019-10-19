@@ -1,7 +1,7 @@
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 20;
     overflow: hidden;
     background-color: #333;
   }
@@ -24,27 +24,26 @@ ul {
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
 * {
   margin: 0;
-  padding: 0;
+  padding: 50;
   box-sizing: border-box;
 }
 
 html, body {
   width: 100%;
-  height: 100%;
+  height: 70%;
 }
 
-body {
-  background: #ffffff;
-}
+
 
 .container {
   position: absolute;
   margin: auto;
-  top: -10px;
+  top: 0px;
   left: 0;
   right: 0;
-  width: 300px;
-  height: 100px;
+  width: 100%;
+  height: 80px;
+  background-color: #333;0
 }
 .container .search {
   position: absolute;
@@ -92,6 +91,8 @@ body {
   border: 2px solid white;
   transition: all .5s;
 }
+
+
 .container input {
   font-family: 'Inconsolata', monospace;
   position: absolute;
