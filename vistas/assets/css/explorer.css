@@ -181,14 +181,30 @@ body {
   }
   
   .sidenav .closebtn {
-    position: absolute;
+    position: top;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
   }
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  @media (max-width: 576px) {
+    .cosa{
+      padding: 43px 15px 57px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+     body{
+      padding: 43px 15px 57px 0px;
+    }
+  
+    .regular slider {
+      text-align: left;
+      position: unset;
+      top: unset;
+      left: unset;
+      width: 100%;
+      padding: 0 5px;
+    }
   }
