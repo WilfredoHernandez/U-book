@@ -417,9 +417,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px;
     min-width: 160px;
-    height: 50px;
+    height: 45px;
     background-color: #f4623a;
     border-radius: 25px;
   
