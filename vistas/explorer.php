@@ -13,7 +13,7 @@
   </style>
 </head>
 <body class="cosa" style="background-image: url(assets/images/cinemagraph.jpg);">
-  <body>
+
     
 
   <div id="mySidenav" class="sidenav">
@@ -33,7 +33,7 @@
         <div class="search"></div>
         
 </div>        
-
+<br><br><br>
 
 <div class="slide-section">
       
@@ -67,13 +67,35 @@
   <script type="text/javascript">
     $(document).on('ready', function() {
  
-      $(".regular").slick({
+      
+      window.mobilecheck = function() {
+           var check = false;
+           if(window.innerWidth<600){
+               check=true;
+           }
+           return check;
+         }
+         if(window.mobilecheck()){
+          $(".regular").slick({
 
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
+infinite: true,
+slidesToShow: 1,
+slidesToScroll: 1,
 
+
+});
+         } else {
+
+          $(".regular").slick({
+
+infinite: true,
+slidesToShow: 3,
+slidesToScroll: 1,
+
+
+});
+         }
+      
     });
 </script>
 
