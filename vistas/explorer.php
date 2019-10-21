@@ -28,7 +28,7 @@
                 <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
 </div>   
 <div class="container">
-<span style="font-size:45px;cursor:pointer; padding-left: 50px; padding-top: 50px"  onclick="openNav()">&#9776;</span>
+<span style="font-size:45px;cursor:pointer; position: absolute; left: 30px; top: 8px"  onclick="openNav()">&#9776;</span>
 <input type="text" placeholder="Look for ISBN...">
         <div class="search"></div>
         
