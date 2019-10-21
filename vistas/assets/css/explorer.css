@@ -124,9 +124,10 @@ html, body {
   width: 300px;
   opacity: 1;
   cursor: text;
+  left: 60%;
 }
 .container input:focus ~ .search {
-  right: -250px;
+  right: 0px;
   background: #7e7e7e7e;
   z-index: 6;
 }
@@ -181,7 +182,7 @@ body {
   }
   
   .sidenav .closebtn {
-    position: top;
+    position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
@@ -279,7 +280,7 @@ body {
       top: 0;
       right: 0;
       bottom: 0;
-      left: 30%;
+      left: 80%;
       width: 40px;
       height: 40px;
       outline: none;
@@ -295,6 +296,7 @@ body {
       z-index: 5;
       font-weight: bolder;
       letter-spacing: 0.1em;
+      cursor:pointer;
     }
     .container input:hover {
       cursor: pointer;
@@ -303,16 +305,19 @@ body {
       width: 200px;
       opacity: 1;
       cursor: text;
+      left: 15%;
     }
     .container input:focus ~ .search {
-      right: -50px;
+      right: 0px;
       background: #7e7e7e7e;
       z-index: 6;
+      cursor: pointer;
     }
     .container input:focus ~ .search::before {
       top: 0;
       left: 0;
       width: 25px;
+      cursor: pointer;
     }
     .container input:focus ~ .search::after {
       top: 0;
