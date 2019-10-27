@@ -12,7 +12,9 @@ require_once "../clases/Usuarios.php";
 	<title>Sign Up</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<meta name="google-signin-client_id" content="435808170988-a84mke6nufousp20iv4d8otc1i5485ka.apps.googleusercontent.com">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="icon" type="image/png" href="assets/images/icons/edit.ico"/>
 
 	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -65,6 +67,9 @@ require_once "../clases/Usuarios.php";
 						<span class="login100-form-btn" id="signupS">
 							Sign Up
 						</span>
+						<div class="g-signin2" data-onsuccess="onSignIn" ></div>
+
+					</div>
 					</div>
 				</form>
 
