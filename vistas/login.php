@@ -10,9 +10,9 @@ require_once "dependencies.php"
 	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+	<meta name="google-signin-client_id" content="435808170988-a84mke6nufousp20iv4d8otc1i5485ka.apps.googleusercontent.com">
 	<link rel="icon" type="image/png" href="assets/images/icons/login.ico"/>
-
+	
 	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" type="text/css" href="assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
@@ -35,7 +35,7 @@ require_once "dependencies.php"
 				<form class="frmLogins" id="frmLogin">
                    
                     <div class="wrap-input100 validate-input m-b-26">
-						<span class="label-input100">Username:</span>
+						<span class="label-input100" >Username:</span>
 						<input class="input100" type="text" name="usuario" id="usuario" placeholder="Enter Email">
 						<span class="focus-input100"></span>
                     </div>
@@ -46,26 +46,18 @@ require_once "dependencies.php"
 						<span class="focus-input100"></span>
 					</div>
 
-						
-			<!--		<div class="flex-sb-m w-full p-b-30">
-						<div class="contact100-form-checkbox">
-							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-							<label class="label-checkbox100" for="ckb1">
-								Remember me
-							</label>
-						</div>
--->
-
 					<div class="container-login100-form-btn">
 						<span class="login100-form-btn" id="btnLogin">
-							Login
+							Login 
 						</span>
+						<div class="g-signin2" data-onsuccess="onSignIn" ></div>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	
+	<p id="id" style="display:none;"> </p>
+	<p id="email" style="display:none;"> </p>
 
 
 </body>
@@ -103,3 +95,14 @@ require_once "dependencies.php"
 	});
     });
 </script>
+
+<script>
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+  console.log(profile.getId()); 
+  console.log(profile.getEmail());
+  
+}
+</script> 
+
+
