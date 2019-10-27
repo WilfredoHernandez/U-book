@@ -1,3 +1,11 @@
+<?php
+require_once "dependencies.php";
+
+//session_start();
+//if(isset($_SESSION['usuario'])){
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,14 +26,19 @@
 
   <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a type="text">Categories</a>
+                <p>Categories</p>
                 <a></a><a></a><a></a><a></a>
                 <a href="#">Services</a>
                 <a></a><a></a><a></a><a></a>
-                <a href="#">Clients</a>
+                <a href="#" id="googleId">
+                 
+                </a>
                 <a></a><a></a><a></a><a></a>
                 <a href="#">Contact</a>
                 <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+                <a href="assets/process/salir.php" onclick="signOut();">Sign out</a>
+
+
 </div>   
 <div class="container">
 <span style="font-size:45px;cursor:pointer; position: absolute; left: 30px; top: 8px"  onclick="openNav()">&#9776;</span>
@@ -66,7 +79,6 @@
   <script src="assets/css/slick.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript">
     $(document).on('ready', function() {
- 
       
       window.mobilecheck = function() {
            var check = false;
@@ -110,3 +122,10 @@ function closeNav() {
 }
 </script>
 
+
+<?php
+
+//    } else{
+//        header("location:../index.php");
+//    }
+?>
