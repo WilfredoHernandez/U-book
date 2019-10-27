@@ -12,11 +12,8 @@ require_once "dependencies.php"
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="google-signin-client_id" content="435808170988-a84mke6nufousp20iv4d8otc1i5485ka.apps.googleusercontent.com">
 	<link rel="icon" type="image/png" href="assets/images/icons/login.ico"/>
-	
 	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-
 	<link rel="stylesheet" type="text/css" href="assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-
 	<link rel="stylesheet" type="text/css" href="assets/css/util.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
 
@@ -101,7 +98,7 @@ function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   console.log(profile.getId()); 
   console.log(profile.getEmail());
-  
+  window.location="explorer.php"
 }
 </script> 
 
