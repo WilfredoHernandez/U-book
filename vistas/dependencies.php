@@ -7,3 +7,7 @@
 <script src="../js/jquery-3.2.1.min.js"></script>
 <script src="../js/alertifyjs/alertify.js"></script>
 <script src="../js/funciones.js"></script>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="../js/GoogleUser.js"></script>
