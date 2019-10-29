@@ -1,7 +1,5 @@
 /* Slider */
 
-
-
 html, body {
       margin: 0;
       padding: 0;
@@ -12,17 +10,28 @@ html, body {
     }
 
     .slider {
-        width: 50%;
-        margin: 100px auto;
+        width: 300px;
+        margin: 100px;
     }
+
+
 
     .slick-slide {
-      margin: 0px 20px;
-    }
+        margin: 0px 0px;
+        height: 390px;
+        width: 300px;
+      }
+    
+      .slick-slide img {
+        height: 390px;
+        width: 300px;
+        box-shadow: 15px 15px 15px rgba(10, 3, 3, 0.575);
 
-    .slick-slide img {
-      width: 100%;
-    }
+    
+      }
+
+ 
+
 
     .slick-prev:before,
     .slick-next:before {

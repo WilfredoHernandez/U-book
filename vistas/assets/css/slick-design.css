@@ -10,31 +10,109 @@ html, body {
   .slider {
       width: 1200px;
       margin: 100px auto;
+      
+  }
+  .centering:hover {
+    position: absolute;
+    color: white;
   }
 
+  .centering:hover strong{
+    position: absolute;
+    top: 14%;
+    font-size: 24px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Merriweather Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+
+  .centering:hover i {
+    position: absolute;
+    top: 35%;
+    font-size: 18px;
+    left: 15%;
+    
+    font-family: Merriweather,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+
+  .centering:hover .is{
+    position: absolute;
+    top: 43%;
+    font-size: 18px;
+    left: 15%;
+    font-family: Merriweather,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+
+  .centering:hover .ed{
+    position: absolute;
+    top: 51%;
+    font-size: 18px;
+    left: 15%;
+    font-family: Merriweather,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  }
+
+  .centering:hover .rent {
+    position: absolute;
+    top: 90%;
+    font-size: 18px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    
+  }
+
+  
+  .slick-slide:hover .image {
+    opacity: 0.04;
+    color: white;
+    
+  }
+  
+  .slick-slide:hover .middle {
+    opacity: 1;
+  }
+  
+  
+
+
   .slick-slide {
-    margin: 0px 20px;
+    margin-right: 100px;
+    height: 390px;
+    width: 20px;
+    background-color: #eb8c3e;
   }
 
   .slick-slide img {
-    width: 80%;
+    height: 390px;
+    width: 300px;
     box-shadow: 15px 15px 15px rgba(10, 3, 3, 0.575);
+
 
   }
 
   .slick-prev:before,
   .slick-next:before {
-    color: black;
+    color: white;
   }
 
 
   .slick-slide {
     transition: all ease-in-out .3s;
     opacity: 1;
+    
   }
   
   .slick-active {
     opacity: 1;
+
   }
 
   .slick-current {
