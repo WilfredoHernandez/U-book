@@ -47,7 +47,7 @@ require_once "dependencies.php"
 						<span class="login100-form-btn" id="btnLogin">
 							Login 
 						</span>
-						<div class="g-signin2" data-onsuccess="onSignIn" ></div>
+						<!--- <div class="g-signin2" data-onsuccess="onSignIn" ></div> --->
 					</div>
 				</form>
 			</div>
