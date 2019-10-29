@@ -34,6 +34,8 @@ class usuarios{
         $c=new conectar();
         $conexion=$c->conexion();
         $password=sha1($datos[1]);
+        $_SESSION['usuario']=$datos[0];
+		$_SESSION['iduser']=self::traeID($datos);
         $sql="SELECT * from usuarios 
             where usuario='$datos[0]'
             and passwords='$password'";
@@ -45,6 +47,18 @@ class usuarios{
         }
 
 }  
+public function traeID($datos){
+    $c=new conectar();
+    $conexion=$c->conexion();
+    $password=sha1($datos[1]);
+    $sql="SELECT id_usuario 
+            from usuarios 
+            where usuario='$datos[0]'
+            and passwords='$password'"; 
+    $result=mysqli_query($conexion,$sql);
+    return mysqli_fetch_row($result)[0];
+}
+
 }
 
 ?>
