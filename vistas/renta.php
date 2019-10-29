@@ -28,19 +28,19 @@
                 <div class="container-names">
                     <h1>Managment Information Systems<strong></h1>
                     <br>
-                    <a>ISBN: a fucking number<strong></a>
+                    <i style="color:gray;">ISBN: a fucking number</i>
                     <br>
                     <hr class="divider my-4">
                     <br>
-                    <p align="right">Cost of rent: $100</p>
+                    <p align="right">Cost of rent: $100<strong></p>
                     <br>
-                    <p align="right">cost of fee: $5.30</p>
+                    <p align="right">cost of fee: $5.30<strong></p>
                     <br>
-                    <p align="right">cost of transportation: $50</p>
+                    <p align="right">cost of transportation: $50<strong></p>
                     <br>
                     <hr class="divider my-4">
                     <br>
-                    <p align="right">total: $10000</p>
+                    <p align="right">total: $10000<strong></p>
                     <br>
                     <hr class="divider my-4">
 
@@ -53,12 +53,15 @@
                         <i class="fa fa-cc-mastercard" style="color:red;"></i>
                         <i class="fa fa-cc-discover" style="color:orange;"></i>
                         </div>
-                        <label>Name on card:</label>
-                        <input type="text" name="card" id="card" placeholder="Ex. Jhon Monroe" style="background-color:lightgray">
-                        <label>Card Number</label>
-                        <input type="text" name="number" id="number" placeholder="1111-2222-3333-4444" style="background-color:lightgray">
-                        <label>Expiration Month:</label>
-                        <select name="exp" id="expiration" style="background-color:lightgray">
+                        <br>
+                        <label>Name on card:<span class="required">*</span></label>
+                        <input type="text" name="card" id="card" placeholder="Ex. Jhon Monroe" style="background-color:lightblue">
+                        <br><br>
+                        <label>Card Number<span class="required">*</span></label>
+                        <input type="text" name="number" id="number" placeholder="1111-2222-3333-4444" style="background-color:lightblue">
+                        <br><br>
+                        <label>Expiration Month:<span class="required">*</span></label>
+                        <select name="exp" id="expiration" style="background-color:lightblue">
                             <option value="january">January</option>
                             <option value="january">Februrary</option>
                             <option value="january">March</option>
@@ -72,12 +75,18 @@
                             <option value="january">November</option>
                             <option value="january">December</option>
                         </select>
-                        <label>Expiration Year</label>
-                        <input type="text" name="year" id="year" placeholder="2019" style="background-color:lightgray">
-                        <label>CVV</label>
-                        <input type="text" name="cvv" id="security" placeholder="123" style="background-color:lightgray">
-                        <br>
-                        <button type="button" onclick="" style="background-color:lightgray">Submit</button>
+                        <br><br>
+                        <label>Expiration Year<span class="required">*</span></label>
+                        <input type="text" name="year" id="year" placeholder="2019" style="background-color:lightblue">
+                        <br><br>
+                        <label>CVV<span class="required">*</span></label>
+                        <input type="text" name="cvv" id="security" placeholder="123" style="background-color:lightblue">
+                        <br><br><br>
+                        <div class="container-renta100-form-btn">
+						<span class="renta100-form-btn" id="btrenta">
+							Pay 
+						</span>
+						<div class="g-signin2" data-onsuccess="onSignIn" ></div>
                     </div>
                     
                 </div>
