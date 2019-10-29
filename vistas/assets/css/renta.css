@@ -555,6 +555,31 @@ p {
   font-size: large;
   box-align: right;
 }
+.container-card{
+  border-radius: 25px;
+
+  font-family: Poppins-Regular;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.container-card span.required{
+  color: red;
+}
+.container-card input{
+  width: 50%;
+  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border: 1px solid #C2C2C2;
+	box-shadow: 1px 1px 4px rgba(253, 253, 253, 0.753);
+	-moz-box-shadow: 1px 1px 4px rgb(252, 249, 249);
+	-webkit-box-shadow: 1px 1px 4px rgb(250, 249, 249);
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	padding: 7px;
+	outline: none;
+}
 
 
 
