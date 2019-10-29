@@ -35,7 +35,9 @@ class usuarios{
         $conexion=$c->conexion();
         $password=sha1($datos[1]);
         $_SESSION['usuario']=$datos[0];
-		$_SESSION['iduser']=self::traeID($datos);
+        $_SESSION['iduser']=self::traeID($datos);
+        $_SESSION['nombre']=self::traeNombre($datos);
+        $_SESSION['apellido']=self::traeApellido($datos);
         $sql="SELECT * from usuarios 
             where usuario='$datos[0]'
             and passwords='$password'";
@@ -52,6 +54,30 @@ public function traeID($datos){
     $conexion=$c->conexion();
     $password=sha1($datos[1]);
     $sql="SELECT id_usuario 
+            from usuarios 
+            where usuario='$datos[0]'
+            and passwords='$password'"; 
+    $result=mysqli_query($conexion,$sql);
+    return mysqli_fetch_row($result)[0];
+}
+
+public function traeNombre($datos){
+    $c=new conectar();
+    $conexion=$c->conexion();
+    $password=sha1($datos[1]);
+    $sql="SELECT nombre 
+            from usuarios 
+            where usuario='$datos[0]'
+            and passwords='$password'"; 
+    $result=mysqli_query($conexion,$sql);
+    return mysqli_fetch_row($result)[0];
+}
+
+public function traeApellido($datos){
+    $c=new conectar();
+    $conexion=$c->conexion();
+    $password=sha1($datos[1]);
+    $sql="SELECT apellido 
             from usuarios 
             where usuario='$datos[0]'
             and passwords='$password'"; 
