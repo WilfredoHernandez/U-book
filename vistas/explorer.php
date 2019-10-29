@@ -1,8 +1,8 @@
 <?php
 require_once "dependencies.php";
 
-//session_start();
-//if(isset($_SESSION['usuario'])){
+session_start();
+if(isset($_SESSION['usuario'])){
 
 ?>
 
@@ -20,7 +20,7 @@ require_once "dependencies.php";
    
   </style>
 </head>
-<body class="cosa" style="background-image: url(assets/images/cinemagraph.jpg);">
+<body class="cosa" style="//background-image: url(assets/images/fondo-explorer.jpg); background-size:100%">
 
     
 
@@ -42,8 +42,11 @@ require_once "dependencies.php";
 </div>   
 <div class="container">
 <span style="font-size:45px;cursor:pointer; position: absolute; left: 30px; top: 8px"  onclick="openNav()">&#9776;</span>
+
 <input type="text" placeholder="Look for ISBN...">
         <div class="search"></div>
+
+        <p> Welcome: <?php echo $_SESSION['nombre']; ?> <?php echo $_SESSION['apellido']; ?> </p>
         
 </div>        
 <br><br><br>
@@ -52,24 +55,65 @@ require_once "dependencies.php";
       
       <section class="regular slider">
     <div>
-      <img src="../img/Macro.jpg" width="130px" height="350px">
+        <div class="centering">
+      <img src="../img/Macro.jpg" class="image">
+        <strong> Macroeconomic Theory and Policies</strong>
+        <i> Author: Wilfredo Hernandez </i>
+        <i class="is"> ISBN: 12343124512 </i>
+        <i class="ed"> Edition: 6th Edition </i>
+        <button href="#" class="rent"> Rent Me! </button>
+        </div>
     </div>
     <div>
-      <img src="../img/Public Finance.jpg" width="130px" height="350px">
+        <div class="centering">
+      <img src="../img/Public Finance.jpg" class="image">
+      <strong> Public Finance</strong>
+        <i> Author: Wilfredo Hernandez </i>
+        <i class="is"> ISBN: 12343124512 </i>
+        <i class="ed"> Edition: 6th Edition </i>
+        <button href="#" class="rent"> Rent Me! </button>
+        </div>
     </div>
     <div>
-      <img src="../img/Personal Finance.jpg" width="1px" height="350px">
+    <div class="centering">
+      <img src="../img/Personal Finance.jpg" class="image">
+      <strong> Your Money our Your Life</strong>
+        <i> Author: Wilfredo Hernandez </i>
+        <i class="is"> ISBN: 12343124512 </i>
+        <i class="ed"> Edition: 6th Edition </i>
+        <button href="#" class="rent"> Rent Me! </button>
+        </div>
     </div>
-    <div>
-      <img src="../img/entrepen.jpg" width="130px" height="350px">
-    </div>
-    <div>
-      <img src="../img/information systems.jpg" width="130px" height="350px">
-    </div>
-    <div>
-      <img src="../img/marketing managment.jpg" width="130px" height="350px">
-    </div>
-
+      <div>
+        <div class="centering">
+      <img src="../img/entrepen.jpg" class="image">
+      <strong> Entrepreneurial Finance</strong>
+        <i> Author: Wilfredo Hernandez </i>
+        <i class="is"> ISBN: 12343124512 </i>
+        <i class="ed"> Edition: 6th Edition </i>
+        <button href="#" class="rent"> Rent Me! </button>
+        </div>
+</div>
+        <div>
+        <div class="centering">
+      <img src="../img/information systems.jpg" class="image">
+        <strong> Managment Information Systems </strong>
+        <i> Author: Wilfredo Hernandez </i>
+        <i class="is"> ISBN: 12343124512 </i>
+        <i class="ed"> Edition: 6th Edition </i>
+        <a href="renta.php" class="rent"> Rent Me! </a>
+      </div>
+</div>
+<div>
+        <div class="centering">
+      <img src="../img/marketing managment.jpg" class="image">
+      <strong> Marketing Management</strong>
+        <i> Author: Wilfredo Hernandez </i>
+        <i class="is"> ISBN: 12343124512 </i>
+        <i class="ed"> Edition: 6th Edition </i>
+        <button href="#" class="rent"> Rent Me! </button>
+        </div>
+</div>
    </section>
 </div>
 </body>
@@ -125,7 +169,7 @@ function closeNav() {
 
 <?php
 
-//    } else{
-//        header("location:../index.php");
-//    }
+   } else{
+       header("location:../index.php");
+  }
 ?>
