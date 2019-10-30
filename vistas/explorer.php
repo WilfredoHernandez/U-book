@@ -20,22 +20,16 @@ if(isset($_SESSION['usuario'])){
    
   </style>
 </head>
-<body class="cosa" style="//background-image: url(assets/images/fondo-explorer.jpg); background-size:100%">
+<body class="cosa" style="background-image: url(assets/images/fondo-explorer.jpg); background-size:100%">
 
     
 
   <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <p>Categories</p>
-                <a></a><a></a><a></a><a></a>
-                <a href="#">Services</a>
-                <a></a><a></a><a></a><a></a>
-                <a href="#" id="googleId">
-                 
-                </a>
-                <a></a><a></a><a></a><a></a>
-                <a href="#">Contact</a>
-                <a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+                <br>
+                <a>Categories</a>
+                
+                <br><br><br><br><br><br><br><br><br>
                 <a href="assets/process/salir.php" onclick="signOut();">Sign out</a>
 
 
@@ -46,7 +40,7 @@ if(isset($_SESSION['usuario'])){
 <input type="text" placeholder="Look for ISBN...">
         <div class="search"></div>
 
-        <p> Welcome: <?php echo $_SESSION['nombre']; ?> <?php echo $_SESSION['apellido']; ?> </p>
+        <p> Welcome back <?php echo $_SESSION['nombre']; ?> <?php echo $_SESSION['apellido']; ?>! </p>
         
 </div>        
 <br><br><br>
@@ -61,7 +55,7 @@ if(isset($_SESSION['usuario'])){
         <i> Author: Wilfredo Hernandez </i>
         <i class="is"> ISBN: 12343124512 </i>
         <i class="ed"> Edition: 6th Edition </i>
-        <button href="#" class="rent"> Rent Me! </button>
+        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
         </div>
     </div>
     <div>
@@ -71,7 +65,7 @@ if(isset($_SESSION['usuario'])){
         <i> Author: Wilfredo Hernandez </i>
         <i class="is"> ISBN: 12343124512 </i>
         <i class="ed"> Edition: 6th Edition </i>
-        <button href="#" class="rent"> Rent Me! </button>
+        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
         </div>
     </div>
     <div>
@@ -81,7 +75,7 @@ if(isset($_SESSION['usuario'])){
         <i> Author: Wilfredo Hernandez </i>
         <i class="is"> ISBN: 12343124512 </i>
         <i class="ed"> Edition: 6th Edition </i>
-        <button href="#" class="rent"> Rent Me! </button>
+        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
         </div>
     </div>
       <div>
@@ -91,7 +85,7 @@ if(isset($_SESSION['usuario'])){
         <i> Author: Wilfredo Hernandez </i>
         <i class="is"> ISBN: 12343124512 </i>
         <i class="ed"> Edition: 6th Edition </i>
-        <button href="#" class="rent"> Rent Me! </button>
+        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
         </div>
 </div>
         <div>
@@ -101,7 +95,7 @@ if(isset($_SESSION['usuario'])){
         <i> Author: Wilfredo Hernandez </i>
         <i class="is"> ISBN: 12343124512 </i>
         <i class="ed"> Edition: 6th Edition </i>
-        <a href="renta.php" class="rent"> Rent Me! </a>
+        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
       </div>
 </div>
 <div>
@@ -111,7 +105,7 @@ if(isset($_SESSION['usuario'])){
         <i> Author: Wilfredo Hernandez </i>
         <i class="is"> ISBN: 12343124512 </i>
         <i class="ed"> Edition: 6th Edition </i>
-        <button href="#" class="rent"> Rent Me! </button>
+        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
         </div>
 </div>
    </section>

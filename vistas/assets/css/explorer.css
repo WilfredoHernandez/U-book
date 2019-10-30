@@ -1,3 +1,5 @@
+
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -44,7 +46,7 @@ html, body {
   right: 0;
   width: 100%;
   height: 80px;
-  background-color: #f4623af3 !important;
+  background-color: #E88513;
   border-color: black;
 }
 .container .search {
@@ -56,7 +58,7 @@ html, body {
   left: 1200px;
   width: 60px;
   height: 60px;
-  background: black;
+  background: #FFB74B;
   border-radius: 50%;
   transition: all 1s;
   z-index: 4;
@@ -157,6 +159,8 @@ body {
     font-family: "Lato", sans-serif;
   }
 
+  
+
   .sidenav {
     height: 100%;
     width: 0;
@@ -164,11 +168,12 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #eb8c3e;
+    background-color: #E88513;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
     border-color: black;
+    opacity: 0.9;
   }
   
   .sidenav a {
@@ -178,16 +183,19 @@ body {
     color: #ffffff;
     display: block;
     transition: 0.3s;
+    cursor: pointer;
   }
   
   .sidenav a:hover {
     color: #e92828;
+
   }
 
   p{
     padding-top:1.5%;
-    padding-left: 37%;
-    font-size: 25px;
+    padding-left: 36%;
+    font-size: 23px;
+    font-weight: bold;
     color: #ffffff;
     display: block;
     cursor: auto;
