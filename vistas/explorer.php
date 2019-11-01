@@ -7,7 +7,6 @@ if(isset($_SESSION['usuario'])){
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=0">
@@ -16,6 +15,8 @@ if(isset($_SESSION['usuario'])){
   <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="assets/css/slick-design.css">
   <link rel="stylesheet" href="assets/css/explorer.css">
+  <link rel="stylesheet" href="assets/css/dropdown.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style type="text/css">
    
   </style>
@@ -27,12 +28,25 @@ if(isset($_SESSION['usuario'])){
   <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <br>
-                <a>Categories</a>
+                <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn" style="font-size=30px">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Psychology</a>
+    <a href="#">Math</a>
+    <a href="#">Games</a>
+    <a href="#">Business</a>
+    <a href="#">MIS</a>
+    <a href="#">Finance</a>
+    <a href="#">Biology</a>
+    <a href="#">Chemistry</a>
+
+  </div>
+  </div>
                 
                 <br><br><br><br><br><br><br><br><br>
                 <a href="assets/process/salir.php" onclick="signOut();">Sign out</a>
 
-
+                
 </div>   
 <div class="container">
 <span style="font-size:45px;cursor:pointer; position: absolute; left: 30px; top: 8px"  onclick="openNav()">&#9776;</span>
@@ -167,3 +181,24 @@ function closeNav() {
        header("location:../index.php");
   }
 ?>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
