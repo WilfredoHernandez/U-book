@@ -20,7 +20,7 @@ if(isset($_SESSION['usuario'])){
    
   </style>
 </head>
-<body class="cosa" style="background-image: url(assets/images/fondo-explorer.jpg); background-size:100%">
+<body style="background-image: url(assets/images/fondo-explorer.jpg); background-size:100%">
 
     
 
@@ -52,9 +52,9 @@ if(isset($_SESSION['usuario'])){
         <div class="centering">
       <img src="../img/Macro.jpg" class="image">
         <strong> Macroeconomic Theory and Policies</strong>
-        <i> Author: Wilfredo Hernandez </i>
-        <i class="is"> ISBN: 12343124512 </i>
-        <i class="ed"> Edition: 6th Edition </i>
+        <i> Author: William H. Branson </i>
+        <i class="is"> ISBN: 9780060409326</i>
+        <i class="ed"> Edition: 3rd Edition </i>
         <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
         </div>
     </div>
@@ -62,9 +62,9 @@ if(isset($_SESSION['usuario'])){
         <div class="centering">
       <img src="../img/Public Finance.jpg" class="image">
       <strong> Public Finance</strong>
-        <i> Author: Wilfredo Hernandez </i>
-        <i class="is"> ISBN: 12343124512 </i>
-        <i class="ed"> Edition: 6th Edition </i>
+        <i> Author: Harvey S. Rosen </i>
+        <i class="is"> ISBN: 0078021685  </i>
+        <i class="ed"> Edition: 10th Edition </i>
         <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
         </div>
     </div>
@@ -72,8 +72,8 @@ if(isset($_SESSION['usuario'])){
     <div class="centering">
       <img src="../img/Personal Finance.jpg" class="image">
       <strong> Your Money our Your Life</strong>
-        <i> Author: Wilfredo Hernandez </i>
-        <i class="is"> ISBN: 12343124512 </i>
+        <i> Author: Vicki Robin </i>
+        <i class="is"> ISBN: 1133595839  </i>
         <i class="ed"> Edition: 6th Edition </i>
         <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
         </div>
@@ -82,8 +82,8 @@ if(isset($_SESSION['usuario'])){
         <div class="centering">
       <img src="../img/entrepen.jpg" class="image">
       <strong> Entrepreneurial Finance</strong>
-        <i> Author: Wilfredo Hernandez </i>
-        <i class="is"> ISBN: 12343124512 </i>
+        <i> Author: Philip J. Adelman </i>
+        <i class="is"> ISBN: 9780133140514 </i>
         <i class="ed"> Edition: 6th Edition </i>
         <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
         </div>
