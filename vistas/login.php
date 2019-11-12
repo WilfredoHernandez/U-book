@@ -47,7 +47,7 @@ require_once "dependencies.php"
 						<span class="login100-form-btn" id="btnLogin">
 							Login 
 						</span>
-						<!--- <div class="g-signin2" data-onsuccess="onSignIn" ></div> --->
+						<!-- <div class="g-signin2" data-onsuccess="onSignIn" ></div> --> 
 					</div>
 				</form>
 			</div>
@@ -64,7 +64,7 @@ require_once "dependencies.php"
 <script type="text/javascript">
     $(document).ready(function(){
         $('#btnLogin').click(function(){
-
+				
 			vacios=validarFormVacio('frmLogin');
 
 		if(vacios>0){
@@ -91,6 +91,7 @@ require_once "dependencies.php"
 	
 	});
     });
+	
 </script>
 
 <script>

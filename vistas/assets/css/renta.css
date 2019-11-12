@@ -536,6 +536,7 @@ input.input100 {
   position: absolute;
   padding-top: 3%;
   padding-left: 5%;
+  font-size: 12px;
   
 }
 .container-names {
@@ -577,7 +578,8 @@ p {
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
-	padding: 7px;
+  padding: 7px;
+  left: 50%;
 	outline: none;
 }
 

@@ -1,9 +1,9 @@
 <?php
-require_once "dependencies.php";
-
+ require_once "dependencies.php";
 session_start();
+$_SESSION['macroeconomics'];
 if(isset($_SESSION['usuario'])){
-
+  
 ?>
 
 <!DOCTYPE html>
@@ -21,19 +21,17 @@ if(isset($_SESSION['usuario'])){
    
   </style>
 </head>
-<body style="background-image: url(assets/images/fondo-explorer.jpg); background-size:100%">
+<body style="//background-image: url(assets/images/fondo-explorer.jpg); background-size:100%">
 
     
 
   <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <br>
-                <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn" style="font-size=30px">Dropdown</button>
+                <a onclick="myFunction()" class="dropbtn" style="font-size=30px">Categories</a>
   <div id="myDropdown" class="dropdown-content">
     <a href="#">Psychology</a>
     <a href="#">Math</a>
-    <a href="#">Games</a>
     <a href="#">Business</a>
     <a href="#">MIS</a>
     <a href="#">Finance</a>
@@ -41,9 +39,11 @@ if(isset($_SESSION['usuario'])){
     <a href="#">Chemistry</a>
 
   </div>
-  </div>
+
                 
-                <br><br><br><br><br><br><br><br><br>
+                <br><br><br><br><br>
+                <a href="bookinfo.php">Your Pocket</a>
+                <br><br><br><br>
                 <a href="assets/process/salir.php" onclick="signOut();">Sign out</a>
 
                 
@@ -67,9 +67,14 @@ if(isset($_SESSION['usuario'])){
       <img src="../img/Macro.jpg" class="image">
         <strong> Macroeconomic Theory and Policies</strong>
         <i> Author: William H. Branson </i>
-        <i class="is"> ISBN: 9780060409326</i>
+        <i class="is"> ISBN: 978006040</i>
         <i class="ed"> Edition: 3rd Edition </i>
-        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
+        <?php if(($_SESSION['macroeconomics'])=='1'){  ?>
+        <div class="button_cont" align="center"><a class="example_a" href="books/Macroeconomics.php">Rent It!</a></div>
+        <?php }; ?>
+        <?php if(($_SESSION['macroeconomics'])=='0'){  ?>
+        <div class="button_cont" align="center"><a class="example_a" disabled>Not Available!</a></div>
+        <?php }; ?>
         </div>
     </div>
     <div>
@@ -79,7 +84,7 @@ if(isset($_SESSION['usuario'])){
         <i> Author: Harvey S. Rosen </i>
         <i class="is"> ISBN: 0078021685  </i>
         <i class="ed"> Edition: 10th Edition </i>
-        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
+        <div class="button_cont" align="center"><a class="example_a" href="books/Public_Finance.php" >Rent It!</a></div>
         </div>
     </div>
     <div>
@@ -89,7 +94,7 @@ if(isset($_SESSION['usuario'])){
         <i> Author: Vicki Robin </i>
         <i class="is"> ISBN: 1133595839  </i>
         <i class="ed"> Edition: 6th Edition </i>
-        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
+        <div class="button_cont" align="center"><a class="example_a" href="books/Personal_Finance.php" >Rent It!</a></div>
         </div>
     </div>
       <div>
@@ -97,29 +102,29 @@ if(isset($_SESSION['usuario'])){
       <img src="../img/entrepen.jpg" class="image">
       <strong> Entrepreneurial Finance</strong>
         <i> Author: Philip J. Adelman </i>
-        <i class="is"> ISBN: 9780133140514 </i>
+        <i class="is"> ISBN: 97801331405 </i>
         <i class="ed"> Edition: 6th Edition </i>
-        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
+        <div class="button_cont" align="center"><a class="example_a" href="#" >Rent It!</a></div>
         </div>
 </div>
         <div>
         <div class="centering">
       <img src="../img/information systems.jpg" class="image">
         <strong> Managment Information Systems </strong>
-        <i> Author: Wilfredo Hernandez </i>
-        <i class="is"> ISBN: 12343124512 </i>
-        <i class="ed"> Edition: 6th Edition </i>
-        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
+        <i> Author: Jane P. Laudon </i>
+        <i class="is"> ISBN: 0619062509 </i>
+        <i class="ed"> Edition: 15th Edition </i>
+        <div class="button_cont" align="center"><a class="example_a" href="books/Management_Information_Systems.php" >Rent It!</a></div>
       </div>
 </div>
 <div>
         <div class="centering">
       <img src="../img/marketing managment.jpg" class="image">
       <strong> Marketing Management</strong>
-        <i> Author: Wilfredo Hernandez </i>
-        <i class="is"> ISBN: 12343124512 </i>
-        <i class="ed"> Edition: 6th Edition </i>
-        <div class="button_cont" align="center"><a class="example_a" href="renta.php" target="_blank">Rent!</a></div>
+        <i> Author: Dawn Jacobucci </i>
+        <i class="is"> ISBN:  </i>
+        <i class="ed"> Edition: 5th Edition </i>
+        <div class="button_cont" align="center"><a class="example_a" href="books/Marketing_Management.php" >Rent It!</a></div>
         </div>
 </div>
    </section>
@@ -154,7 +159,7 @@ slidesToScroll: 1,
 
 infinite: true,
 slidesToShow: 3,
-slidesToScroll: 1,
+slidesToScroll: 2,
 
 
 });
@@ -180,8 +185,10 @@ function closeNav() {
    } else{
        header("location:../index.php");
   }
+
 ?>
 <script>
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {

@@ -1,11 +1,18 @@
+<?php
+ require_once "../dependencies.php";
+session_start();
+if(isset($_SESSION['usuario'])){
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login</title>
+	<title>Personal Finance</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-	<link rel="icon" type="image/png" href="../assets/images/icons/login.ico"/>
+	<link rel="icon" type="image/png" href="../../img/icons/book.ico">
 	<link rel="stylesheet" type="text/css" href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/util.css">
@@ -17,13 +24,17 @@
 	<div class="limiter">
 		<div class="container-renta100">
 			<div class="wrap-renta100">
-				<div class="renta100-form-title" style="background-image: url(assets/images/bg-01.jpg);">
+				<div class="renta100-form-title" style="background-image: url(../assets/images/bg-01.jpg);">
 					<span class="renta100-form-title-1">
                     </span>
                 </div>
 
                 <div class="container-book" >
                 <img src="../../img/Personal Finance.jpg" width="250px" height="300px">
+                <br>
+                    <p align="right" style="font-size:15px">Cost of rent: $100</p>
+                    <p align="right" style="font-size:15px">Cost of fee: $5.30</p>
+                   <strong> <p align="right" style="font-size:19px">Total: $10000</p></strong>
                 </div>
                 <div class="container-names">
                     <h1>Personal Finance<strong></h1>
@@ -32,17 +43,6 @@
                     <br>
                     <hr class="divider my-4">
                     <br>
-                    <p align="right">Cost of rent: $100<strong></p>
-                    <br>
-                    <p align="right">cost of fee: $5.30<strong></p>
-                    <br>
-                    <p align="right">cost of transportation: $50<strong></p>
-                    <br>
-                    <hr class="divider my-4">
-                    <br>
-                    <p align="right">total: $10000<strong></p>
-                    <br>
-                    <hr class="divider my-4">
 
                     <div class="container-card">
                         <h2>Payment</h2>
@@ -88,10 +88,17 @@
 						</span>
 						<div class="g-signin2" data-onsuccess="onSignIn" ></div>
                     </div>
-                    
+                    <br>
                 </div>
 			</div>
 		</div>
 	</div>
 </body>
 </html>
+<?php
+
+   } else{
+       header("location:../../index.php");
+  }
+
+?>

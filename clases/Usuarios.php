@@ -38,6 +38,7 @@ class usuarios{
         $_SESSION['iduser']=self::traeID($datos);
         $_SESSION['nombre']=self::traeNombre($datos);
         $_SESSION['apellido']=self::traeApellido($datos);
+        $_SESSION['macroeconomics']=self::macroeconomicsID($datos);
         $sql="SELECT * from usuarios 
             where usuario='$datos[0]'
             and passwords='$password'";
@@ -81,6 +82,16 @@ public function traeApellido($datos){
             from usuarios 
             where usuario='$datos[0]'
             and passwords='$password'"; 
+    $result=mysqli_query($conexion,$sql);
+    return mysqli_fetch_row($result)[0];
+}
+
+public function macroeconomicsID($datos){
+    $c=new conectar();
+    $conexion=$c->conexion();
+    $sql="SELECT disponible 
+            from books 
+            where id_libro='6'"; 
     $result=mysqli_query($conexion,$sql);
     return mysqli_fetch_row($result)[0];
 }
