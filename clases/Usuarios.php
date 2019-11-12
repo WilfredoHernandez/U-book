@@ -39,6 +39,10 @@ class usuarios{
         $_SESSION['nombre']=self::traeNombre($datos);
         $_SESSION['apellido']=self::traeApellido($datos);
         $_SESSION['macroeconomics']=self::macroeconomicsID($datos);
+        $_SESSION['publicfinance']=self::publicFinanceID($datos);
+        $_SESSION['personalfinance']=self::personalFinanceID($datos);
+        $_SESSION['management']=self::managementID($datos);
+        $_SESSION['marketing']=self::marketingID($datos);
         $sql="SELECT * from usuarios 
             where usuario='$datos[0]'
             and passwords='$password'";
@@ -95,7 +99,45 @@ public function macroeconomicsID($datos){
     $result=mysqli_query($conexion,$sql);
     return mysqli_fetch_row($result)[0];
 }
+public function publicFinanceID($datos){
+    $c=new conectar();
+    $conexion=$c->conexion();
+    $sql="SELECT disponible 
+            from books 
+            where id_libro='12'"; 
+    $result=mysqli_query($conexion,$sql);
+    return mysqli_fetch_row($result)[0];
+}
 
+public function personalFinanceID($datos){
+    $c=new conectar();
+    $conexion=$c->conexion();
+    $sql="SELECT disponible 
+            from books 
+            where id_libro='11'"; 
+    $result=mysqli_query($conexion,$sql);
+    return mysqli_fetch_row($result)[0];
+}
+
+public function managementID($datos){
+    $c=new conectar();
+    $conexion=$c->conexion();
+    $sql="SELECT disponible 
+            from books 
+            where id_libro='9'"; 
+    $result=mysqli_query($conexion,$sql);
+    return mysqli_fetch_row($result)[0];
+}
+
+public function marketingID($datos){
+    $c=new conectar();
+    $conexion=$c->conexion();
+    $sql="SELECT disponible 
+            from books 
+            where id_libro='10'"; 
+    $result=mysqli_query($conexion,$sql);
+    return mysqli_fetch_row($result)[0];
+}
 }
 
 ?>

@@ -1,7 +1,6 @@
 <?php
  require_once "dependencies.php";
 session_start();
-$_SESSION['macroeconomics'];
 if(isset($_SESSION['usuario'])){
   
 ?>
@@ -84,7 +83,12 @@ if(isset($_SESSION['usuario'])){
         <i> Author: Harvey S. Rosen </i>
         <i class="is"> ISBN: 0078021685  </i>
         <i class="ed"> Edition: 10th Edition </i>
-        <div class="button_cont" align="center"><a class="example_a" href="books/Public_Finance.php" >Rent It!</a></div>
+        <?php if(($_SESSION['publicfinance'])=='1'){  ?>
+        <div class="button_cont" align="center"><a class="example_a" href="books/Public_Finance.php">Rent It!</a></div>
+        <?php }; ?>
+        <?php if(($_SESSION['publicfinance'])=='0'){  ?>
+        <div class="button_cont" align="center"><a class="example_a" disabled>Not Available!</a></div>
+        <?php }; ?>
         </div>
     </div>
     <div>
@@ -94,7 +98,13 @@ if(isset($_SESSION['usuario'])){
         <i> Author: Vicki Robin </i>
         <i class="is"> ISBN: 1133595839  </i>
         <i class="ed"> Edition: 6th Edition </i>
-        <div class="button_cont" align="center"><a class="example_a" href="books/Personal_Finance.php" >Rent It!</a></div>
+        <?php if(($_SESSION['personalfinance'])=='1'){  ?>
+        <div class="button_cont" align="center"><a class="example_a" href="books/Personal_Finance.php">Rent It!</a></div>
+        <?php }; ?>
+        <?php if(($_SESSION['personalfinance'])=='0'){  ?>
+        <div class="button_cont" align="center"><a class="example_a" disabled>Not Available!</a></div>
+        <?php }; ?>
+       
         </div>
     </div>
       <div>
@@ -114,7 +124,12 @@ if(isset($_SESSION['usuario'])){
         <i> Author: Jane P. Laudon </i>
         <i class="is"> ISBN: 0619062509 </i>
         <i class="ed"> Edition: 15th Edition </i>
-        <div class="button_cont" align="center"><a class="example_a" href="books/Management_Information_Systems.php" >Rent It!</a></div>
+        <?php if(($_SESSION['management'])=='1'){  ?>
+        <div class="button_cont" align="center"><a class="example_a" href="books/Management_Information_Systems.php">Rent It!</a></div>
+        <?php }; ?>
+        <?php if(($_SESSION['management'])=='0'){  ?>
+        <div class="button_cont" align="center"><a class="example_a" disabled>Not Available!</a></div>
+        <?php }; ?>
       </div>
 </div>
 <div>
@@ -122,9 +137,14 @@ if(isset($_SESSION['usuario'])){
       <img src="../img/marketing managment.jpg" class="image">
       <strong> Marketing Management</strong>
         <i> Author: Dawn Jacobucci </i>
-        <i class="is"> ISBN:  </i>
+        <i class="is"> ISBN:1337271128</i>
         <i class="ed"> Edition: 5th Edition </i>
-        <div class="button_cont" align="center"><a class="example_a" href="books/Marketing_Management.php" >Rent It!</a></div>
+        <?php if(($_SESSION['marketing'])=='1'){  ?>
+        <div class="button_cont" align="center"><a class="example_a" href="books/Marketing_Management.php">Rent It!</a></div>
+        <?php }; ?>
+        <?php if(($_SESSION['marketing'])=='0'){  ?>
+        <div class="button_cont" align="center"><a class="example_a" disabled>Not Available!</a></div>
+        <?php }; ?>
         </div>
 </div>
    </section>
