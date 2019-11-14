@@ -6,9 +6,11 @@ if(isset($_SESSION['usuario'])){
 ?>
 
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <title>log</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
   <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
@@ -16,13 +18,9 @@ if(isset($_SESSION['usuario'])){
   <link rel="stylesheet" href="assets/css/explorer.css">
   <link rel="stylesheet" href="assets/css/dropdown.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style type="text/css">
    
-  </style>
 </head>
-<body style="//background-image: url(assets/images/fondo-explorer.jpg); background-size:100%">
-
-    
+<body style="background-image: url(assets/images/fondo-1.jpg); background-size:100%">
 
   <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -207,6 +205,7 @@ function closeNav() {
   }
 
 ?>
+
 <script>
 
 /* When the user clicks on the button, 

@@ -77,6 +77,10 @@ if(isset($_SESSION['usuario'])){
                         <input type="text" name="cvv" id="security" placeholder="123" style="background-color:lightblue">
                         <input type="text" name="disponible" id="disponible" value="0" style="background-color:lightblue" hidden>
                         <input type="text" name="id_libro" id="id_libro" value="11" style="background-color:lightblue" hidden>
+                        <input type="text" name="libro" id="libro" value="Personal Finance" style="background-color:lightblue" hidden>
+                        <input type="text" name="autor" id="autor" value="Vicki Robin" style="background-color:lightblue" hidden>
+                        <input type="text" name="isbn" id="isbn" value="1133595839" style="background-color:lightblue" hidden>
+                        <input type="text" name="usuario" id="usuario" value="<?php echo $_SESSION['usuario'] ?>" style="background-color:lightblue" hidden>
                         <br><br><br>
 
                         <div class="container-renta100-form-btn">
@@ -118,7 +122,7 @@ datos=$('#frmRent').serialize();
 			data:datos,
 			url:"../assets/process/rentarProcess.php",
 			success:function(r){
-                if(r==1){
+                if(r!=1){
 					alertify.success('Rent confirmed, please Login again.');
 					setTimeout(function(){
                         

@@ -10,15 +10,15 @@ if(isset($_SESSION['usuario'])){
 $c= new conectar();
 $conexion=$c->conexion();
 $sel= "SELECT * FROM rents WHERE usuario='$_SESSION[usuario]'";
-$ejecutar= mysqli_query ($conexion,$sel);
-$chequear_libros = mysqli_num_rows($ejecutar);
+$ejecutar= mysqli_query($conexion,$sel); 
 
+$chequear_libros = mysqli_num_rows($ejecutar);
 if ($chequear_libros ==1 ){
-	
+
 $sql="SELECT nombre_libro,
 			autor,
 			isbn
-		from rents";
+		from rents where usuario='$_SESSION[usuario]'";
 $result=mysqli_query($conexion,$sql);
 
 ?>
@@ -62,8 +62,10 @@ $result=mysqli_query($conexion,$sql);
     <td><?php echo $ver[2]; ?></td>
     <td></td>
   </tr>
+  <?php endwhile; exit();}?>     
 </table>
-<?php endwhile; } else { echo 'no data'; }?>              
+
+         
 						
 					</div>
 			</div>

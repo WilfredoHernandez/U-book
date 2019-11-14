@@ -1,4 +1,5 @@
 <?php
+
 class usuarios{
     public function registroUsuario($datos){
         $c=new conectar();
@@ -89,6 +90,23 @@ public function traeApellido($datos){
     $result=mysqli_query($conexion,$sql);
     return mysqli_fetch_row($result)[0];
 }
+
+public function historialRenta($datos){
+    $c=new conectar();
+    $conexion=$c->conexion();
+
+    $sql="INSERT into rents (
+                        usuario,
+                        nombre_libro,
+                        autor,
+                        isbn)
+                values ('$datos[2]',
+                        '$datos[3]',
+                        '$datos[4]',
+                        '$datos[5]')";
+    return mysqli_query($conexion,$sql);
+
+    }
 
 public function macroeconomicsID($datos){
     $c=new conectar();
