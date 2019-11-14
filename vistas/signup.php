@@ -61,7 +61,7 @@ require_once "../clases/Usuarios.php";
 						<span class="login100-form-btn" id="signupS">
 							Sign Up
 						</span>
-						<div class="g-signin2" data-onsuccess="onSignIn" ></div>
+						<!-- <div class="g-signin2" data-onsuccess="onSignIn" ></div>
 
 					</div>
 					</div>

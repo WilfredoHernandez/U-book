@@ -23,7 +23,7 @@
 
   <!-- Theme CSS - Includes Bootstrap -->
   <link href="css/creative.min.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="page-top">
@@ -153,14 +153,20 @@
           <p class="text-white mt-0">Ready to start your next project with us? Give us a call or send us an email and we will get back to you as soon as possible!</p>
         </div>
       </div>
+      <br>
       <div class="row">
-        <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i class="fas fa-phone fa-3x mb-3 text-white mt-0"></i>
-          <div class="text-white mt-0" >+504 9598-7459</div>
+        <div class="col-lg-4 mr-auto text-center ">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-3x mb-3 text-white mt-0" ></i></a>
+          <a class="d-block text-white mt-0" >Follow us on Facebook</a>
         </div>
+
+        <div class="col-lg-4 mr-auto text-center ">
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-3x mb-3 text-white mt-0" ></i></a>
+          <a class="d-block text-white mt-0" >Follow us on Instagram</a>
+        </div>
+        
         <div class="col-lg-4 mr-auto text-center ">
           <i class="fas fa-envelope fa-3x mb-3 text-white mt-0"></i>
-          <!-- Make sure to change the email address in anchor text AND the link below! -->
           <a class="d-block text-white mt-0" href="mailto:contact@yourwebsite.com">ubook.contact@outlook.com</a>
         </div>
       </div>

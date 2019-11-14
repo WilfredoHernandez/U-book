@@ -85,7 +85,7 @@ if(isset($_SESSION['usuario'])){
 						<span class="renta100-form-btn" id="btrenta">
 							Pay 
 						</span>
-						<div class="g-signin2" data-onsuccess="onSignIn" ></div>
+<!--<div class="g-signin2" data-onsuccess="onSignIn" ></div> -->
                     </div>
                     <br>
                 </div>

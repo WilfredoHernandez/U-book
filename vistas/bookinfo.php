@@ -1,10 +1,27 @@
 <?php
  require_once "dependencies.php";
+ require_once "../clases/conexion.php";
 session_start();
 if(isset($_SESSION['usuario'])){
-
 ?>
 
+<?php
+
+$c= new conectar();
+$conexion=$c->conexion();
+$sel= "SELECT * FROM rents WHERE usuario='$_SESSION[usuario]'";
+$ejecutar= mysqli_query($conexion,$sel); 
+
+$chequear_libros = mysqli_num_rows($ejecutar);
+if ($chequear_libros ==1 ){
+
+$sql="SELECT nombre_libro,
+			autor,
+			isbn
+		from rents where usuario='$_SESSION[usuario]'";
+$result=mysqli_query($conexion,$sql);
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,21 +49,25 @@ if(isset($_SESSION['usuario'])){
 				<table>
   <tr>
 	<th>Book Name</th>
-	<th>Book Image</th>
+	<th>ISBN</th>
     <th>Author</th>
-    <th>ISBN</th>
+    <th>Options</th>
   </tr>
+
+  <?php while($ver=mysqli_fetch_row($result)): ?>
   <tr>
-	<td>Strategic Management</td>
-	<td><img src="../img/Strategic Management.jpg" alt="" border=3 height=140 width=120></td>
-    <td>Frank T. Rothaermel</td>
-    <td>1260092372</td>
+
+	<td><?php echo $ver[0]; ?></td>
+	<td><?php echo $ver[1]; ?></td>
+    <td><?php echo $ver[2]; ?></td>
+    <td></td>
   </tr>
+  <?php endwhile; exit();}?>     
 </table>
-                   
+
+         
 						
 					</div>
-				</form>
 			</div>
 		</div>
 	</div>
