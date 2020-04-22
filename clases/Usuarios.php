@@ -108,6 +108,11 @@ public function historialRenta($datos){
 
     }
 
+
+
+    ///// ID SESSIONS FOR EVERY BOOK
+
+
 public function macroeconomicsID($datos){
     $c=new conectar();
     $conexion=$c->conexion();

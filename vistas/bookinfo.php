@@ -60,7 +60,10 @@ $result=mysqli_query($conexion,$sql);
 	<td><?php echo $ver[0]; ?></td>
 	<td><?php echo $ver[1]; ?></td>
     <td><?php echo $ver[2]; ?></td>
-    <td></td>
+    <td>
+		<form  class="#" id="frmRent">
+<input type="text" name="isbn" id="isbn" value="<?php echo $ver[2]; ?>" hidden>
+</form></td>
   </tr>
   <?php endwhile; exit();}?>     
 </table>
