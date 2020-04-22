@@ -29,6 +29,7 @@ You can  use the content, desing and scripts if you need it.
 ![Screenshot](previews/preview4.png)  
 
 # Notes:
-> Some features needs to be completed.
-> You <b>MUST</b> modify the conexion.php to connect to your database server in order to used the login/sign up functions.
-
+* Some features needs to be completed.  
+* You <b>MUST</b> modify the conexion.php to connect to your database server in order to used the login/sign up functions.  
+* Some pages are not completely adaptatives (css needs some changes)
+  
