@@ -12,4 +12,4 @@ You can  use the content, desing and scripts if you need it.
  5.javascript  
  
  # Previews:
-
+![Screenshot](previews/preview1.png)
