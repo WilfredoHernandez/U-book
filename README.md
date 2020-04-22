@@ -15,6 +15,9 @@ You can  use the content, desing and scripts if you need it.
  <p align="center">Home Page</p>  
 
 ![Screenshot](previews/preview1.png)  
-![Screenshot](previews/preview2.png)  
-![Screenshot](previews/preview3.png)  
+<p align="center"> Services Div</p>  
+![Screenshot](previews/preview2.png)
+<p align="center">Login Page</p>  
+![Screenshot](previews/preview3.png)
+<p align="center">Explorer Page</p>  
 ![Screenshot](previews/preview4.png)  
