@@ -12,6 +12,9 @@ You can  use the content, desing and scripts if you need it.
  5.javascript  
  
  # Previews:
+ <p align="center" size:"15px">
+  Home Page
+</p>
 ![Screenshot](previews/preview1.png)  
 ![Screenshot](previews/preview2.png)  
 ![Screenshot](previews/preview3.png)  
